@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Luchtkwaliteit Nederland (PM2,5)</title>
+</head>
+<body>
+
+<p>Data from the World Air Quality Index project and respective EPAs. All data is unvalidated at the time of publication, and due to quality assurance these data may be amended, without notice, at any time. Under no circumstances will this website or its owner be liable for any loss, injury or damage arising directly or indirectly from the supply of this data. </p>
+
+<div  id='map'  style='height:380px;'  />
+<script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFQf2E17OqrOXKe5OuXLXYYFJrq6pGl70&callback=initMap"></script>
+
+<script>
+      var  map  =  new  google.maps.Map(document.getElementById('map'),  {
+                  center:  new  google.maps.LatLng(52.3702157,  4.895167899999933),
+                  mapTypeId:  google.maps.MapTypeId.ROADMAP,
+                  zoom:  10
+              });
+
+                              var  t  =  new  Date().getTime();
+      var  waqiMapOverlay  =  new  google.maps.ImageMapType({
+                  getTileUrl:  function(coord,  zoom)  {
+                            return  'http://tiles.aqicn.org/tiles/usepa-pm25/'  +  zoom  +  "/"  +  coord.x  +  "/"  +  coord.y  +  ".png?token=b31adae534a1b66147b349609ba9432972ce8ea9";
+                  },
+                  name:  "Air  Quality Netherlands PM2.5 only",
+        });
+
+      map.overlayMapTypes.insertAt(0,waqiMapOverlay);
+
+</script>
+
+</body>
+</html>
