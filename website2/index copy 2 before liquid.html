@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jille Kuipers Portfolio | Innovation & Technology Leader, Finance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+    /* System font stack for that native Apple feel */
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        scroll-behavior: smooth;
+    }
+
+    /* Glassmorphism Effect */
+    .glass {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+    }
+
+    /* Dark Glassmorphism for alternating sections */
+    .glass-dark {
+        background: rgba(15, 23, 42, 0.8);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+    }
+
+    /* Liquid Reveal Animation */
+    .reveal-on-scroll {
+        opacity: 0;
+        transform: scale(0.95) translateY(40px);
+        transition: all 1s cubic-bezier(0.16, 1, 0.3, 1); /* Apple-style ease-out */
+    }
+
+    .reveal-on-scroll.visible {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+
+    /* Subtle hover lift for images */
+    .liquid-card {
+        transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.6s ease;
+    }
+
+    .liquid-card:hover {
+        transform: scale(1.02);
+        box-shadow: 0 30px 60px -12px rgba(0,0,0,0.25);
+    }
+</style>    
+
+</head>
+<body class="bg-slate-50 text-slate-900 leading-tight">
+
+<header class="sticky top-0 z-50 w-full glass border-b border-white/20">
+    <div class="max-w-[94%] mx-auto px-4 py-4 flex justify-between items-center">
+        <a href="#" class="text-xl font-bold tracking-tight text-slate-900">
+            Jille Kuipers
+        </a>
+        
+        <nav class="hidden md:flex items-center space-x-10">
+            <a href="#work" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">Work</a>
+            <a href="#expertise" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">Expertise</a>
+            <a href="/Resume-Jille-Kuipers.pdf" target="_blank" class="px-5 py-2 bg-slate-900 text-white text-sm font-bold rounded-full shadow-sm hover:bg-blue-600 transition-all">
+                Resume
+            </a>
+        </nav>
+
+        <div class="md:hidden">
+            <a href="mailto:hello@jillekuipers.com" class="p-2 text-blue-600">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+            </a>
+        </div>
+    </div>
+</header>
+    
+<section class="min-h-screen flex flex-col justify-center px-4 md:px-12 lg:px-16 py-12">
+    <div class="max-w-[90%] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-3 order-1 lg:order-2 flex justify-center lg:justify-end">
+            <div class="relative group w-48 h-48 md:w-64 md:h-64 lg:w-full lg:max-w-[280px]">
+                <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+                <img src="images/jille-kuipers.webp" 
+                     alt="Jille Kuipers" 
+                     class="relative w-full h-full object-cover rounded-full border-4 border-white shadow-2xl transition-transform duration-700 hover:scale-[1.05] reveal-on-scroll">
+            </div>
+        </div>
+
+        <div class="lg:col-span-9 order-2 lg:order-1 space-y-8">
+            <div class="inline-block px-3 py-1 text-xs font-semibold tracking-wider text-blue-600 uppercase bg-blue-100 rounded-full">
+                Innovation & Technology Leader | Co-founder
+            </div>
+
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-slate-900 leading-[1.1]">
+                <span class="text-blue-600">Bridging the gap </span>between strategic vision and <span class="text-blue-600">science-backed execution</span> to create products that <span class="text-blue-600">people need.</span>
+            </h1>
+
+
+            <p class="text-xl md:text-2xl text-slate-600 max-w-3xl leading-relaxed">
+                Senior Project and Innovation Manager with 10+ years of global experience leading complex digital transformations for Fortune 500s.
+            </p>
+
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-8 pt-8 border-t border-slate-200">
+                <div>
+                    <span class="block text-3xl font-bold text-slate-900">€300M+</span>
+                    <span class="text-sm text-slate-500 uppercase tracking-wide font-medium">Portfolio Managed as Pricing officer</span>
+                </div>
+                <div>
+                    <span class="block text-3xl font-bold text-slate-900">20+</span>
+                    <span class="text-sm text-slate-500 uppercase tracking-wide font-medium">Global IP Positions</span>
+                </div>
+                <div>
+                    <span class="block text-3xl font-bold text-slate-900">Y-Combinator</span>
+                    <span class="text-sm text-slate-500 uppercase tracking-wide font-medium">Backed startup</span>
+                </div>
+                <div>
+                    <span class="block text-3xl font-bold text-slate-900">1M+ USD</span>
+                    <span class="text-sm text-slate-500 uppercase tracking-wide font-medium">Annual sales in startup with 3 FTE</span>
+                </div>
+            </div>
+
+
+            <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                <a href="mailto:hello@jillekuipers.com" class="px-8 py-4 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition-all text-center">
+                    Email
+                </a>
+                <a href="/resume" class="px-8 py-4 bg-white text-blue-600 border border-blue-200 font-semibold rounded-lg hover:bg-blue-50 transition-all text-center">
+                    View Resume
+                </a>
+                <a href="https://outlook.office.com/bookwithme/user/6edf5621ba4642f8a4c9e0b15c540bd3@luxbalance.com?anonymous&ismsaljsauthenabled&ep=plink
+" class="px-8 py-4 bg-white text-blue-600 border border-blue-200 font-semibold rounded-lg hover:bg-blue-50 transition-all text-center">
+                    Let's Talk
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="work" class="bg-white">
+
+<div class="project-section bg-slate-900 text-white py-24 px-4 md:px-12 lg:px-16 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+            <div class="lg:col-span-4 lg:sticky lg:top-24 space-y-6">
+                <div class="text-blue-400 font-semibold uppercase tracking-widest text-xs">Venture Founding</div>
+                <h3 class="text-4xl font-bold">Luxbalance | Co-Founder</h3>
+                <p class="text-slate-200 text-lg leading-relaxed">
+                    Co-founded and self-funded from zero to $1.7M annual sales. Optimized growth for 10 million lab plants annually. Served 600+ orders. Talked to hundreds of users from the Philippines to the Netherlands and Singapore. Secured 20 proprietary IP positions globally. Lights used by Universities such as University to Florida to Wageningen and beyond.
+                </p>
+                <div class="flex gap-4 pt-4">
+                    <span class="px-3 py-1 bg-slate-800 rounded text-sm text-slate-300">Product Strategy</span>
+                    <span class="px-3 py-1 bg-slate-800 rounded text-sm text-slate-300">User-Centric Innovation</span>
+                    <span class="px-3 py-1 bg-slate-800 rounded text-sm text-slate-300">Global Growth</span>
+                </div>
+            <div class="relative pl-6 border-l-4 border-orange-500 py-2 my-6">
+                <p class="text-slate-100/ italic text-lg leading-relaxed">
+                    One of the "most promising companies" (out of 15,000 startups) 
+                </p>
+                <a href="https://www.ycombinator.com/blog/announcing-the-startup-school-2019-grant-recipients/" target="_blank" class="text-orange-500 font-bold text-sm hover:underline mt-2 inline-block">
+                    View on Y-Combinator Startup School →
+                </a>
+            </div>
+
+            </div>
+            <div class="lg:col-span-8 space-y-4">
+                
+                <div class="space-y-4">
+                    <img src="images/Tissueculture.JPG" 
+                        class="w-full aspect-video object-cover rounded-2xl shadow-2xl transition-transform duration-700 hover:scale-[1.01] reveal-on-scroll" 
+                        alt="RoomYou sensor">
+                    <p class="text-sm font-medium text-slate-400 uppercase tracking-widest pl-2">More than 10 Million plants grow under HortiPower lights. Supported labs in Europe and Asia.</p>
+                </div>
+
+                <div class="space-y-4">
+                    <img src="images/IndoorGarden.jpeg" 
+                        class="w-full aspect-video object-cover rounded-2xl shadow-2xl transition-transform duration-700 hover:scale-[1.01] reveal-on-scroll" 
+                        alt="Novotel project">
+                    <p class="text-sm font-medium text-slate-400 uppercase tracking-widest pl-2">Supplied lights to the biggest indoor farm in Hong Kong</p>
+                </div>
+
+                <div class="space-y-4">
+                    <img src="images/sensor.webp" 
+                        class="w-full aspect-video object-cover rounded-2xl shadow-2xl transition-transform duration-700 hover:scale-[1.01] reveal-on-scroll" 
+                        alt="RoomYou sensor">
+                    <p class="text-sm font-medium text-slate-400 uppercase tracking-widest pl-2">RoomYou: The first sensor for Real-time CO2 & Circadian Monitoring</p>
+                </div>
+
+                <div class="space-y-4">
+                    <img src="images/RoomYoulisting.png" 
+                        class="w-full aspect-video object-cover rounded-2xl shadow-2xl transition-transform duration-700 hover:scale-[1.01] reveal-on-scroll" 
+                        alt="RoomYou sensor">
+                    <p class="text-sm font-medium text-slate-400 uppercase tracking-widest pl-2">RoomYou: The first sensor for Real-time CO2 & Circadian Monitoring</p>
+                </div>
+
+                
+                <div class="space-y-4">
+                    <img src="images/plantswithmarit.jpg" 
+                        class="w-full aspect-video object-cover rounded-2xl shadow-2xl transition-transform duration-700 hover:scale-[1.01] reveal-on-scroll" 
+                        alt="LedAffinity">
+                    <p class="text-sm font-medium text-slate-400 uppercase tracking-widest pl-2">Helping end-users to bring nature inside</p>
+                </div>
+
+                
+                <div class="space-y-4">
+                    <img src="images/Stair.JPG" 
+                        class="w-full aspect-video object-cover rounded-2xl shadow-2xl transition-transform duration-700 hover:scale-[1.01] reveal-on-scroll" 
+                        alt="LedAffinity">
+                    <p class="text-sm font-medium text-slate-400 uppercase tracking-widest pl-2">Architectural lighting</p>
+                </div>
+
+            
+
+                <div class="space-y-4">
+                    <img src="images/cy fun - KLSC_Limelight_008.tif" 
+                        class="w-full aspect-video object-cover rounded-2xl shadow-2xl transition-transform duration-700 hover:scale-[1.01] reveal-on-scroll" 
+                        alt="Novotel project">
+                    <p class="text-sm font-medium text-slate-400 uppercase tracking-widest pl-2">Architectural lighting</p>
+                </div>                
+            </div>
+
+        </div>
+    </div>
+
+    
+
+    
+
+    </section>
+
+<style>
+    .reveal-on-scroll {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .reveal-on-scroll.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+</style>
+
+<script>
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal-on-scroll').forEach((el) => observer.observe(el));
+</script>
+
+
+    <section id="work" class="py-20 px-4 md:px-12 lg:px-16 bg-white">
+    <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-12">Showcase</h2>
+        
+        <div class="grid grid-cols-1 gap-16">
+            
+            <div class="group grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                <div class="order-2 lg:order-1 space-y-6">
+                    <div class="flex items-center space-x-2 text-blue-600 font-semibold uppercase tracking-widest text-xs">
+                        <span>Philips Lighting</span>
+                        <span class="h-px w-8 bg-blue-600"></span>
+                        <span>Global Initiative</span>
+                    </div>
+                    <h3 class="text-3xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
+                        Standardizing Light as a Service (LaaS)
+                    </h3>
+                    <p class="text-lg text-slate-600 leading-relaxed">
+                        Led a global transformation from hardware sales to outcome-based recurring revenue. [cite: 217, 253, 1041] Developed the worldwide standard for business case proposals, mandating data-centric financial modeling and risk analysis for multi-million euro projects. [cite: 68, 70, 1043]
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-2">✔</span>
+                            <span class="text-slate-700 font-medium">Standardized proposals for €0.5M–€5M projects. [cite: 69, 1041]</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-2">✔</span>
+                            <span class="text-slate-700 font-medium">Transitioned hardware sales into recurring service contracts. [cite: 254, 270]</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="order-1 lg:order-2 bg-slate-100 rounded-2xl overflow-hidden aspect-video shadow-inner flex items-center justify-center group-hover:shadow-lg transition-all duration-500">
+                    <span class="text-slate-400 font-mono text-sm">[Data-Centric Finance Dashboard]</span>
+                </div>
+            </div>
+
+            <div class="group grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                <div class="bg-slate-100 rounded-2xl overflow-hidden aspect-video shadow-inner flex items-center justify-center group-hover:shadow-lg transition-all duration-500">
+                    <span class="text-slate-400 font-mono text-sm">[Circadian Product Ecosystem]</span>
+                </div>
+                <div class="space-y-6">
+                    <div class="flex items-center space-x-2 text-green-600 font-semibold uppercase tracking-widest text-xs">
+                        <span>LuxBalance</span>
+                        <span class="h-px w-8 bg-green-600"></span>
+                        <span>Co-Founder</span>
+                    </div>
+                    <h3 class="text-3xl font-bold text-slate-900 group-hover:text-green-600 transition-colors">
+                        Scaling Life-Centric Innovation
+                    </h3>
+                    <p class="text-lg text-slate-600 leading-relaxed">
+                        Built a science-led lighting startup from 0 to $1.7M annual sales. [cite: 1028] Secured 20 proprietary IP positions across EU, USA, and China while directing end-to-end e-commerce operations and fulfillment. [cite: 1029, 1033]
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <span class="text-green-600 mr-2">✔</span>
+                            <span class="text-slate-700 font-medium">Launched 10 product lines across 6 categories. [cite: 1029]</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-600 mr-2">✔</span>
+                            <span class="text-slate-700 font-medium">YC-recognized for innovation in circadian health. [cite: 1028]</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="expertise" class="py-20 px-4 md:px-12 lg:px-16 bg-slate-50">
+    <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+            
+            <div class="space-y-6">
+                <h3 class="text-2xl font-bold text-slate-900 flex items-center">
+                    <span class="bg-blue-600 w-2 h-8 mr-4 rounded-full"></span>
+                    Financial Governance
+                </h3>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                    <h4 class="font-bold text-lg text-slate-900">Council Member | Univé</h4>
+                    <p class="text-slate-600 mt-2 leading-relaxed">
+                        Represented one million members for this Dutch insurance cooperative. Approved annual financial report and appointing the Board of Directors for an entity with €39M annual turnover.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="space-y-6">
+                <h3 class="text-2xl font-bold text-slate-900 flex items-center">
+                    <span class="bg-green-600 w-2 h-8 mr-4 rounded-full"></span>
+                    International Execution
+                </h3>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                    <h4 class="font-bold text-lg text-slate-900">Dutch national & Hong Kong PR.</h4>
+                    <p class="text-slate-600 mt-2 leading-relaxed">
+                        Experienced in European, Greater China and Asia Pacific markets.
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="mt-24 pt-12 border-t border-slate-200 text-center">
+            <h2 class="text-3xl font-bold text-slate-900">Helping you succeed</h2>
+            <p class="text-slate-500 mt-4">Open to leadership opportunities in Innovation, Tech and Digital transformation and AI.</p>
+            <div class="mt-8 flex justify-center space-x-6">
+                <a href="mailto:hello@jillekuipers.com" class="text-blue-600 font-bold hover:underline">Email</a>
+                <a href="https://linkedin.com/in/jillekuipers" class="text-blue-600 font-bold hover:underline">LinkedIn</a>
+                <a href="/Resume-Jille-Kuipers.pdf" target="_blank" rel="noopener noreferrer" class="text-blue-600 font-bold hover:underline">Download Resume (PDF)</a>
+            </div>
+            <p class="text-xs text-slate-400 mt-12 uppercase tracking-widest">© 2026 Jille Kuipers</p>
+        </div>
+    </div>
+</section>
+</body>
+</html>
