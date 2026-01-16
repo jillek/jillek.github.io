@@ -127,8 +127,23 @@
         <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
         <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
     </span>
-    <span>Available for Leadership Roles</span>
+    <span>Available per <span id="availability-date">Next Month</span></span>
 </div>
+
+<script>
+    function updateAvailability() {
+        const date = new Date();
+        // Move to the first day of the next month
+        date.setMonth(date.getMonth() + 1);
+        
+        const options = { month: 'long', year: 'numeric' };
+        const nextMonth = date.toLocaleDateString('en-US', options);
+        
+        // Display as "1 March 2026" or "March 2026"
+        document.getElementById('availability-date').textContent = `${nextMonth}`;
+    }
+    updateAvailability();
+</script>
 
             <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-slate-900 leading-[1.1]">
                 <span class="text-blue-600">Bridging the gap </span>between strategic vision and <span class="text-blue-600">science-backed execution</span> to create products that <span class="text-blue-600">people need.</span>
@@ -375,7 +390,63 @@
         </div>
     </div>
 </div>    
-    
+
+
+<div class="project-section bg-[#0f172a] text-white py-32 px-4 md:px-12 lg:px-16 border-b border-slate-800">
+    <div class="max-w-[94%] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-20 items-start">
+        
+        <div class="lg:col-span-4 lg:sticky lg:top-32 space-y-8">
+            <div class="text-blue-400 font-bold uppercase tracking-widest text-xs">Positive Ageing</div>
+            <h3 class="text-5xl font-bold leading-tight tracking-tighter">Support the bodyclock for people with Alzheimer</h3>
+            
+            <p class="text-slate-300 text-xl font-light leading-relaxed">
+                From talking to users to making the product, manufacturing and to commissioning it on site, this project is an example of end-to-end delivery and human-centric innovation. It was an iterative process with 5 hardware iterations, <strong>23 firmware updates</strong> and 10 app updates to make these lights work well for people.
+            </p>
+            
+            <div class="flex flex-wrap gap-3">
+                <span class="px-3 py-1 bg-slate-800 border border-slate-700 rounded text-[10px] font-bold uppercase tracking-widest text-slate-100">Innovation management</span>
+                <span class="px-3 py-1 bg-slate-800 border border-slate-700 rounded text-[10px] font-bold uppercase tracking-widest text-slate-100">Lead customer</span>
+                <span class="px-3 py-1 bg-slate-800 border border-slate-700 rounded text-[10px] font-bold uppercase tracking-widest text-slate-100">Science</span>
+            </div>
+
+            <div class="glass-dark border border-white/10 p-8 rounded-3xl space-y-4">
+                <p class="text-blue-100 italic text-lg leading-relaxed font-light">
+                    "Helping people with Alzheimer to live better".
+                </p>
+            </div>
+        </div>
+
+        <div class="lg:col-span-8 space-y-24">
+            <div class="space-y-8">
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-[2rem] blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
+                    <img src="images/melanopsin.png" class="relative w-full aspect-video object-cover rounded-[2rem] shadow-2xl liquid-card reveal-on-scroll" alt="Pricing Strategy Dashboard">
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-slate-800/50 border border-white/10 p-6 rounded-2xl">
+                        <span class="block text-3xl font-bold text-blue-400">1 out of 10</span>
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-slate-500">will develop Alzheimer</span>
+                    </div>
+                    <div class="bg-slate-800/50 border border-white/10 p-6 rounded-2xl">
+                        <span class="block text-3xl font-bold text-blue-400">0.5%</span>
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-slate-500">of lighting is designed for circadian support</span>
+                    </div>
+                    <div class="bg-slate-800/50 border border-white/10 p-6 rounded-2xl">
+                        <span class="block text-3xl font-bold text-blue-400">10x</span>
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-slate-500">improvement in circadian support</span>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-[2rem] blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
+                    <img src="images/infographic.png" class="relative w-full aspect-video object-cover rounded-[2rem] shadow-2xl liquid-card reveal-on-scroll" alt="Pricing Strategy Dashboard">
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
     </section>
 
 
