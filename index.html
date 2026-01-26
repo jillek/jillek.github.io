@@ -785,20 +785,20 @@
     async function updatePulse() {
         const target = document.getElementById('ai-content-target');
         
-        // This is the direct 'Raw' URL that bypasses your domain's 404/Redirect issues
+        // This specific URL bypasses GitHub Pages redirects and custom domain 404s
         const url = 'https://raw.githubusercontent.com/jillek/jillek.github.io/main/daily-pulse.json';
 
         try {
-            // Added Cache-Buster (?t=) to ensure it's not showing an old version
+            // Fetch directly from the GitHub source
             const response = await fetch(`${url}?t=${Date.now()}`);
             
             if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
+                throw new Error(`Failed to load file: ${response.status}`);
             }
             
             const data = await response.json();
 
-            // Success! Updating the UI with your Gemini 2.5 Flash content
+            // Success: Injecting the Gemini 2.5 Flash content
             target.innerHTML = `
                 <h3 class="text-xl font-bold text-slate-900 mb-4">${data.title}</h3>
                 <p class="text-slate-600 leading-relaxed">${data.summary}</p>
@@ -809,7 +809,7 @@
         }
     }
 
-    // Initialize the fetch
+    // Call the function
     updatePulse();
 </script>
 
