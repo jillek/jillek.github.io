@@ -704,16 +704,7 @@
         </div>
     </div>
 </section>
-<section id="daily-pulse" class="py-24 bg-slate-50 border-t border-slate-100">
-    <div class="max-w-[94%] mx-auto px-4">
-        <h2 class="text-xs uppercase tracking-[0.4em] font-black text-slate-400 mb-8">Daily Strategic Pulse</h2>
-        <div class="glass border border-slate-200 p-8 rounded-3xl shadow-xl max-w-2xl">
-            <div id="ai-content-target">
-                <p class="text-slate-400 italic">Analysing today's innovation landscape...</p>
-            </div>
-        </div>
-    </div>
-</section>
+
 <section id="contact" class="py-32 px-4 md:px-12 lg:px-16 bg-white border-t border-slate-100 text-left">
     <div class="max-w-[94%] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
         
@@ -779,31 +770,6 @@
     }, { threshold: 0.15 });
 
     document.querySelectorAll('.reveal-on-scroll').forEach((el) => observer.observe(el));
-</script>
-
-<script>
-    async function updatePulse() {
-        const target = document.getElementById('ai-content-target');
-        // Replace with your actual GitHub Pages URL
-        const url = 'https://jillek.github.io/daily-pulse.json';
-
-        try {
-            const response = await fetch(url + '?t=' + new Date().getTime()); // Cache-buster
-            if (!response.ok) throw new Error('Network response was not ok');
-            
-            const data = await response.json();
-
-            target.innerHTML = `
-                <h3 class="text-xl font-bold text-slate-900 mb-4">${data.title}</h3>
-                <p class="text-slate-600 leading-relaxed">${data.summary}</p>
-            `;
-        } catch (error) {
-            console.error('Pulse Error:', error);
-            target.innerHTML = `<p class="text-slate-400 italic">Insights temporarily unavailable. Strategy is still being forged.</p>`;
-        }
-    }
-
-    updatePulse();
 </script>
 
 </body>
