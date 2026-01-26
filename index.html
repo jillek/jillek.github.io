@@ -784,29 +784,24 @@
 <script>
     async function updatePulse() {
         const target = document.getElementById('ai-content-target');
-        // This URL works for both manual and automated updates
+        // Direct link to avoid the 301 Redirect / CORS issue
         const url = 'https://raw.githubusercontent.com/jillek/jillek.github.io/main/daily-pulse.json';
 
         try {
-            // Date.now() prevents the browser from showing "yesterday's" data
             const response = await fetch(`${url}?t=${Date.now()}`);
-            
             if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
             
             const data = await response.json();
 
-            // Injecting the Gemini 2.5 Flash content
             target.innerHTML = `
                 <h3 class="text-xl font-bold text-slate-900 mb-4">${data.title}</h3>
                 <p class="text-slate-600 leading-relaxed">${data.summary}</p>
             `;
         } catch (error) {
-            console.error('Pulse Fetch Error:', error);
+            console.error('Pulse Error:', error);
             target.innerHTML = `<p class="text-slate-400 italic">Insights pending. Strategy is being forged.</p>`;
         }
     }
-
-    // Run the function when the page loads
     updatePulse();
 </script>
 
