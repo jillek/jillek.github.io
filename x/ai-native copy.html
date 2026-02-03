@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategic Portfolio | Jille Kuipers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .prose-custom p { margin-bottom: 1.5rem; line-height: 1.75; color: #334155; font-size: 1.125rem; }
+        .prose-custom h2 { font-size: 1.875rem; font-weight: 800; margin-top: 2.5rem; margin-bottom: 1.25rem; color: #0f172a; tracking: -0.025em; }
+        .glass { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+        .liquid-card { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .liquid-card:hover { transform: translateY(-8px); }
+        .case-study-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; }
+    </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N04F07L12Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-N04F07L12Z');
+</script>
+<!-- Clarity tag -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "v9ggfwihuu");
+</script>
+</head>
+
+<body class="bg-slate-50 text-slate-900 leading-tight">
+    <nav class="p-8 max-w-5xl mx-auto">
+        <a href="blog.html" class="text-xs font-bold text-slate-400 hover:text-blue-600 tracking-widest transition-all">← BACK TO STRATEGIC HUB</a>
+    </nav>
+
+    <main class="max-w-3xl mx-auto px-6 py-12">
+        <header class="mb-16">
+            <div class="inline-block px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-[10px] font-bold uppercase tracking-widest mb-6">Strategic Insight</div>
+            <h1 class="text-5xl md:text-6xl font-black tracking-tighter mb-8 leading-[0.9]">The AI-Native S-Curve: Why Starting from Scratch Can Help You Win</h1>
+            <p class="text-xl text-slate-500 font-light">Lessons from Abernathy, Utterback, and Y-Combinator on the shift toward disruptive innovation.</p>
+        </header>
+        <div class="border-t border-slate-200 pt-6 mb-12">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+                <div class="space-y-1">
+                    <div class="text-lg font-bold text-slate-900">Jille Kuipers</div>
+                    <div class="text-sm text-slate-500">
+                        Published on 3 February 2026, <span id="current-time">12:00</span> • Hong Kong
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4 text-xs font-bold uppercase tracking-widest text-slate-400">
+                    <a href="javascript:window.print()" class="flex items-center border border-slate-200 px-4 py-2 rounded-full hover:bg-slate-100 hover:text-blue-600 transition-all">
+                        Save (PDF)
+                    </a>
+                    <button onclick="navigator.share({title: document.title, url: window.location.href})" class="flex items-center border border-slate-200 px-4 py-2 rounded-full hover:bg-slate-100 hover:text-blue-600 transition-all">
+                        Share
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // Updates the placeholder to the actual current time
+            function updateTime() {
+                const now = new Date();
+                document.getElementById('current-time').textContent = now.toLocaleTimeString('en-GB', { 
+                    hour: '2-digit', 
+                    minute: '2-digit' 
+                });
+            }
+            updateTime();
+        </script>        
+        <div class="prose-custom">
+            <p>I was recently reading through Y Combinator’s latest Request for Startups (RFS), and one theme stood out to me: <strong>AI-native.</strong> It sounds gentle but it is a disruptive shift. For the last decade, we’ve been "adding on" cloud and AI to existing structures. But as YC requests, and as history suggests (from analogue to digital), the real winners of a technological revolution aren't the ones who integrate; they’re the ones who are born in the new medium.</p>
+
+            <h2>The "Threat from Below": Lessons from Insurance</h2>
+            <p>I remember a coffee break nine years ago at an annual meeting with the CEO of a Large insurance company (multi-million policyholders). We talked about "the future." Back then, the analogy was that it felt like trying to turn a tanker ship. The legacy data, the rigid processes, the "this is how we’ve always done it" culture, it was not slow to adapt and generally people were happy with slow adaptation as it also felt less risky.</p>
+            <p>But many industries are now facing the "Transitional Pattern" of innovation. In their 1978 classic <em>Patterns of Industrial Innovation</em>, Abernathy and Utterback noted that successful enterprises often go through a period of flexibility before hitting a "specific" stage where they become rigid and efficient.</p>
+            <p>The threat to these giants always comes from "below", from seemingly inferior, scrappy products that tackle small use cases the big guys ignore. As Utterback later expanded on in 1993, these innovations take off, become the dominant design, and eventually flatten into a "golden tail" just as a new S-curve begins to rise.</p>
+            <p>I always loved this article of Utterback, as it was mandatory reading during my university and I loved to discuss disruptive examples, e.g. from analogue to digital cameras, and feature phones to smartphones, to old examples from the lighting industry from wire-based to gas-based and later in my career I would work on LED-based and digital-based lighting. What I've seen is that the companies that stay on top in the old industrial paradigm, may invest huge amounts into a new promising industrial paradigm, but whether they can stay on top depends on how willing they are to really embrace new business models and the way of working with new technology.</p>
+
+            <div class="glass p-8 rounded-3xl my-12 border-l-4 border-blue-600">
+                <p class="italic text-slate-600 mb-0 font-medium">"We are at the base of that new S-curve right now."</p>
+            </div>
+
+            <h2>Watch People's Liquid expectations, something impressive and new today is totally expected tomorrow</h2>
+            <p>Organizations are navigating a "marketing sea change" called liquid expectations (Economist 2015), where customer experiences seep from one industry into entirely unrelated ones. When a user experiences the superpower (speed), agentic (supportive) or smooth (read sovereign-AI) in one industry, those experiences reset their standards for healthcare, insurance, and retail. Companies can no longer just beat their direct rivals; they must compete with perceptual competitors, the innovators who define global standards for immediacy and ease. In the "fluid" stage of innovation, where user needs are the primary stimulus , failing to meet these cross-industry benchmarks makes a legacy firm's rigid processes a liability rather than an asset.</p>
+
+            <div class="my-16 p-10 glass rounded-[3rem] border border-slate-200">
+                <h3 class="text-center text-[10px] font-black uppercase tracking-[0.4em] text-slate-400 mb-16">The Expectations Gap</h3>
+                
+                <div class="relative max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+                    
+                    <div class="lg:col-span-7 relative flex justify-center items-end h-[350px] w-full">
+                        
+                        <div class="absolute bottom-0 w-[320px] h-[320px] md:w-[350px] md:h-[350px] rounded-full border-2 border-dashed border-orange-400/40 bg-orange-50/30 flex justify-center pt-8">
+                            <span class="text-[9px] font-black text-orange-500 uppercase tracking-widest">Perceptual</span>
+                        </div>
+                        
+                        <div class="absolute bottom-0 w-[220px] h-[220px] md:w-[250px] md:h-[250px] rounded-full border-2 border-blue-600/30 bg-blue-50/20 flex justify-center pt-8">
+                            <span class="text-[9px] font-black text-blue-600 uppercase tracking-widest">Experiential</span>
+                        </div>
+                        
+                        <div class="absolute bottom-0 w-[120px] h-[120px] md:w-[150px] md:h-[150px] rounded-full bg-slate-900 shadow-2xl flex items-center justify-center">
+                            <span class="text-[9px] font-black text-white uppercase tracking-widest">Similar</span>
+                        </div>
+
+                        <div class="absolute -right-4 top-0 bottom-0 flex flex-col justify-center items-start">
+                            <div class="h-full w-px bg-gradient-to-b from-orange-400 via-blue-600 to-slate-900"></div>
+                            <div class="absolute left-4 top-1/4 -translate-y-1/2 w-32">
+                                <p class="text-[10px] font-black text-slate-400 uppercase leading-tight">The Expansion of<br>Liquid Expectations</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-5 space-y-8">
+                        <div class="group">
+                            <div class="flex items-center gap-3 mb-2">
+                                <div class="w-2 h-2 rounded-full bg-orange-500"></div>
+                                <h4 class="text-sm font-black uppercase tracking-widest">Perceptual</h4>
+                            </div>
+                            <p class="text-sm text-slate-500 font-light">Changes all expectations.</p>
+                        </div>
+
+                        <div class="group">
+                            <div class="flex items-center gap-3 mb-2">
+                                <div class="w-2 h-2 rounded-full bg-blue-600"></div>
+                                <h4 class="text-sm font-black uppercase tracking-widest">Experiential</h4>
+                            </div>
+                            <p class="text-sm text-slate-500 font-light">Replace Us.</p>
+                        </div>
+
+                        <div class="group">
+                            <div class="flex items-center gap-3 mb-2">
+                                <div class="w-2 h-2 rounded-full bg-slate-900"></div>
+                                <h4 class="text-sm font-black uppercase tracking-widest">Similar</h4>
+                            </div>
+                            <p class="text-sm text-slate-500 font-light">Direct competitors.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Beyond the Desk: AI as a Physical Superpower</h2>
+            <p>Another YC requests that caught my eye was <strong>AI Guidance for Physical Work.</strong> It reminded me of a project I saw years ago involving AR for medical procedures.</p>
+            <p>At the time, the tech wasn't there. VR was disorienting for surgeons, and AR headsets were plagued by battery issues and lag. But today? Multimodal models can see what we see and talk us through a task in real-time.</p>
+            
+            <p>Abernathy and Utterback’s model shows that in the "Fluid" stage of an industry, innovation is driven by information on users' needs and functional performance rather than cost. Would we see this play out in:</p>
+            <ul class="list-disc pl-6 mb-6 space-y-2 text-slate-600">
+                <li><strong>Modern Metal Mills:</strong> Moving from "tonnage" to software-defined speed.</li>
+                <li><strong>AI-Native Agencies:</strong> Moving from labor-heavy hours to high-margin software output.</li>
+                <li><strong>Augmented Health:</strong> Where the AI doesn't replace the professional but acts as a skill download for physical tasks.</li>
+            </ul>
+
+            <h2>The Inconsistency of "Adding-On"</h2>
+            <p>The most profound takeaway from the research is the <strong>Consistency of Management Action.</strong> The authors argue you can't increase product diversity while simultaneously trying to hit peak efficiency.</p>
+            <p>This is why "AI-native" can be critical. A hedge fund trying to "use ChatGPT" while maintaining a 1980s compliance structure will fail. To get the next wave, you would have to build the system around the tech, not the tech around the system.</p>
+
+            <div class="overflow-x-auto my-12">
+                <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+                    <thead>
+                        <tr class="bg-slate-900 text-white text-xs uppercase tracking-widest">
+                            <th class="p-4">Feature</th>
+                            <th class="p-4">Fluid / AI-Native</th>
+                            <th class="p-4">Specific / Legacy</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm text-slate-600">
+                        <tr class="border-b border-slate-100">
+                            <td class="p-4 font-bold">Emphasis</td>
+                            <td class="p-4">Functional performance</td>
+                            <td class="p-4">Cost reduction</td>
+                        </tr>
+                        <tr class="border-b border-slate-100">
+                            <td class="p-4 font-bold">Innovation Source</td>
+                            <td class="p-4">User needs & technical inputs</td>
+                            <td class="p-4">Quality/cost pressure</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-bold">Process</td>
+                            <td class="p-4">Flexible & adaptable</td>
+                            <td class="p-4">Rigid & capital-intensive</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p>The "golden tail" of the last era is still profitable, but the future belongs to those building the new "dominant designs."</p>
+        </div>
+
+<div class="mt-16 pt-8 border-t border-slate-100">
+    <h4 class="text-xs font-black uppercase tracking-[0.2em] text-slate-400 mb-4">Selected References</h4>
+    <ul class="space-y-3 text-sm text-slate-500 italic font-light leading-relaxed">
+        <li>
+            Abernathy, W. J., & Utterback, J. M. (1978). <span class="not-italic">Patterns of industrial innovation.</span> Technology review, 80(7), 40-47.
+        </li>
+        <li>
+            Y-Combinator (2026). <span class="not-italic">Requests for Startups.</span> [online archive].
+        </li>
+        <li>
+            The Economist (2015). <span class="not-italic">Liquid expectations: Digital transformation and the seeping of customer experience.</span>
+        </li>
+    </ul>
+</div>
+        
+        
+        
+        <footer class="mt-20 pt-12 border-t border-slate-200 text-center">
+            <p class="text-slate-400 mb-8 italic text-sm">Implementing AI-native strategies in HealthTech and AgTech and beyond.</p>
+            <a href="mailto:jille@luxbalance.com" class="px-8 py-4 bg-slate-900 text-white rounded-full font-bold hover:bg-blue-600 transition-all">Brainstorm & Discuss</a>
+        </footer>
+    </main>
+</body>
+</html>
