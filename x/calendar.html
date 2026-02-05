@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids February 2026 Calendar</title>
+    <style>
+        :root {
+            --travel-color: #FFDEE9;
+            --birthday-color: #FFF9C4;
+            --cny-color: #FFEBEE;
+            --habs-color: #E3F2FD;
+            --magart-color: #F1F8E9;
+            --church-color: #F3E5F5; /* Soft Purple */
+            --border-style: 2px dashed #BDBDBD;
+        }
+
+        @page {
+            size: A3 landscape;
+            margin: 10mm;
+        }
+
+        body {
+            font-family: 'Comic Sans MS', 'Chalkboard SE', cursive;
+            background-color: #fff;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #FF6F61;
+            margin: 0;
+            text-shadow: 2px 2px #FFD1DC;
+        }
+
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 10px;
+            border: 4px solid #FF6F61;
+            border-radius: 20px;
+            padding: 15px;
+            background-color: #FFF;
+        }
+
+        .day-name {
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 10px;
+            background-color: #FFD1DC;
+            border-radius: 10px;
+        }
+
+        .day-cell {
+            min-height: 140px;
+            border: var(--border-style);
+            border-radius: 15px;
+            padding: 10px;
+            position: relative;
+            background-color: #fafafa;
+        }
+
+        .date-num {
+            font-size: 24px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .event {
+            font-size: 14px;
+            margin-top: 5px;
+            padding: 4px 8px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .travel { background-color: var(--travel-color); border: 1px solid #F48FB1; }
+        .birthday { background-color: var(--birthday-color); border: 1px solid #FFF176; }
+        .cny { background-color: var(--cny-color); border: 1px solid #EF9A9A; font-weight: bold; color: #D32F2F; }
+        .habs { background-color: var(--habs-color); border: 1px dotted #64B5F6; }
+        .magart { background-color: var(--magart-color); border: 1px dotted #81C784; }
+        .church { background-color: var(--church-color); border: 1px solid #CE93D8; }
+
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>🌸 February 2026 🌸</h1>
+    <p>Birthday Month!</p>
+</div>
+
+<div class="calendar-grid">
+    <div class="day-name">Sun</div><div class="day-name">Mon</div><div class="day-name">Tue</div><div class="day-name">Wed</div><div class="day-name">Thu</div><div class="day-name">Fri</div><div class="day-name">Sat</div>
+
+    <div class="day-cell">
+        <span class="date-num">1</span>
+        <div class="event church">⛪ Church (8:30)</div>
+    </div>
+    <div class="day-cell"><span class="date-num">2</span></div>
+    <div class="day-cell">
+        <span class="date-num">3</span>
+        <div class="event magart">🎨 Magart (8:45)</div>
+    </div>
+    <div class="day-cell"><span class="date-num">4</span></div>
+    <div class="day-cell">
+        <span class="date-num">5</span>
+        <div class="event habs">🏠 Little Habs (2pm)</div>
+        <div class="event magart">🎨 Magart (8:45)</div>
+    </div>
+    <div class="day-cell"><span class="date-num">6</span></div>
+    <div class="day-cell"><span class="date-num">7</span></div>
+
+    <div class="day-cell">
+        <span class="date-num">8</span>
+        <div class="event church">⛪ Church (8:30)</div>
+    </div>
+    <div class="day-cell"><span class="date-num">9</span></div>
+    <div class="day-cell">
+        <span class="date-num">10</span>
+        <div class="event magart">🎨 Magart (8:45)</div>
+    </div>
+    <div class="day-cell"><span class="date-num">11</span></div>
+    <div class="day-cell">
+        <span class="date-num">12</span>
+        <div class="event birthday">🎂 Birthday!</div>
+        <div class="event travel">🚗 Travel</div>
+        <div class="event habs">🏠 Little Habs (2pm)</div>
+    </div>
+    <div class="day-cell">
+        <span class="date-num">13</span>
+        <div class="event travel">🚗 Travel</div>
+    </div>
+    <div class="day-cell">
+        <span class="date-num">14</span>
+        <div class="event travel">🚗 Travel</div>
+    </div>
+
+    <div class="day-cell">
+        <span class="date-num">15</span>
+        <div class="event church">⛪ Church (8:30)</div>
+    </div>
+    <div class="day-cell"><span class="date-num">16</span></div>
+    <div class="day-cell">
+        <span class="date-num">17</span>
+        <div class="event cny">🏮 CNY Holiday</div>
+    </div>
+    <div class="day-cell">
+        <span class="date-num">18</span>
+        <div class="event cny">🏮 CNY Holiday</div>
+    </div>
+    <div class="day-cell">
+        <span class="date-num">19</span>
+        <div class="event cny">🏮 CNY Holiday</div>
+    </div>
+    <div class="day-cell"><span class="date-num">20</span></div>
+    <div class="day-cell"><span class="date-num">21</span></div>
+
+    <div class="day-cell">
+        <span class="date-num">22</span>
+        <div class="event church">⛪ Church (8:30)</div>
+    </div>
+    <div class="day-cell"><span class="date-num">23</span></div>
+    <div class="day-cell">
+        <span class="date-num">24</span>
+        <div class="event birthday">🎂 Birthday!</div>
+    </div>
+    <div class="day-cell"><span class="date-num">25</span></div>
+    <div class="day-cell">
+        <span class="date-num">26</span>
+        <div class="event habs">🏠 Little Habs (2pm)</div>
+        <div class="event magart">🎨 Magart (8:45)</div>
+    </div>
+    <div class="day-cell"><span class="date-num">27</span></div>
+    <div class="day-cell"><span class="date-num">28</span></div>
+</div>
+
+</body>
+</html>
