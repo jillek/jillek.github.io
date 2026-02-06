@@ -1,0 +1,11 @@
+<svg width="600" height="300" viewBox="0 0 600 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M50 50V250H550" stroke="#E2E8F0" stroke-width="2"/>
+  <path d="M50 200L150 50L250 220L350 80L450 240L550 60" stroke="#EF4444" stroke-width="3" fill="none"/>
+  <text x="50" y="35" font-family="sans-serif" font-size="10" font-weight="bold" fill="#94A3B8">CAPABILITY</text>
+  <text x="150" y="40" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#2563EB">Complex Oncology</text>
+  <text x="250" y="240" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#EF4444">Basic Logic Error</text>
+  <text x="350" y="70" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#2563EB">Board Exam Success</text>
+  <text x="450" y="255" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#EF4444">Contradiction Failure</text>
+  <rect x="50" y="150" width="500" height="100" fill="#F8FAFC" opacity="0.5"/>
+  <text x="560" y="200" font-family="sans-serif" font-size="10" font-weight="bold" fill="#64748B">HUMAN REASONING BASELINE</text>
+</svg>
