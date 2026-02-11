@@ -140,13 +140,40 @@
         </div>
 
         <div class="lg:col-span-9 order-2 lg:order-1 space-y-8">
+            <div class="inline-block px-3 py-1 text-xs font-semibold tracking-wider text-blue-600 uppercase bg-blue-100 rounded-full">
+                Currently in Hong Kong
+            </div>
 
+
+            
+<div class="inline-flex items-center space-x-2 px-3 py-1 text-xs font-bold tracking-wider text-emerald-600 uppercase bg-emerald-50 border border-emerald-100 rounded-full">
+    <span class="relative flex h-2 w-2">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+    </span>
+    <span>Available per <span id="availability-date">Next Month</span></span>
+</div>
+
+<script>
+    function updateAvailability() {
+        const date = new Date();
+        // Move to the first day of the next month
+        date.setMonth(date.getMonth() + 1);
+        
+        const options = { month: 'long', year: 'numeric' };
+        const nextMonth = date.toLocaleDateString('en-US', options);
+        
+        // Display as "1 March 2026" or "March 2026"
+        document.getElementById('availability-date').textContent = `${nextMonth}`;
+    }
+    updateAvailability();
+</script>
 
             <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-slate-900 leading-[1.1]">
-            Making something <span class="text-blue-600 text-nowrap">people need</span>. </h1>
+            I lead teams to make products <span class="text-blue-600 text-nowrap">people need</span>, from complex problems into <span class="text-blue-600">insights & science-based solutions</span> and drive <span class="text-blue-600">growth</span></h1>
 
             <p class="text-xl md:text-2xl text-slate-800 max-w-3xl leading-relaxed">
-            <strong>Innovation Management</strong> with <strong>15+ years of experience</strong> <br> <span class="text-orange-600"><strong>AI-integration</strong></span> and execution across <strong>HealthTech, AgTech, and Corporate.</strong>
+            <strong>Innovation & Product Leader</strong> with <strong>15+ years of experience</strong> bridging strategic vision, <span class="text-orange-600"><strong>AI-integration</strong></span> and execution across <strong>HealthTech, AgTech, and Corporate.</strong>
             </p>
 
             <div class="grid grid-cols-2 sm:grid-cols-4 gap-8 pt-8 border-t border-slate-200">
@@ -160,7 +187,7 @@
                 </div>
                 <div>
                     <span class="block text-3xl font-bold text-slate-900">Y-Combinator</span>
-                    <span class="text-sm text-slate-500 uppercase tracking-wide font-medium">Grant</span>
+                    <span class="text-sm text-slate-500 uppercase tracking-wide font-medium">Mentioned startup</span>
                 </div>
                 <div>
                     <span class="block text-3xl font-bold text-slate-900">1M+ USD</span>
@@ -218,12 +245,15 @@
             <div class="lg:col-span-8 space-y-8">
                 <div class="space-y-6">
                     <img src="images/Tissueculture.JPG" class="w-full aspect-video object-cover rounded-[2rem] shadow-2xl liquid-card reveal-on-scroll" alt="Tissue Culture">
+                    <p class="text-sm font-medium text-slate-400 uppercase tracking-widest pl-2">More than 10 Million plants grow under HortiPower lights. Supported labs in Europe and Asia.</p>
                 </div>
                 <div class="space-y-6">
                     <img src="images/IndoorGarden.jpeg" class="w-full aspect-video object-cover rounded-[2rem] shadow-2xl liquid-card reveal-on-scroll" alt="Indoor Farm">
+                    <p class="text-sm font-medium text-slate-400 uppercase tracking-widest pl-2">Helping farmers to grow indoor in Hong Kong</p>
                 </div>
                 <div class="space-y-6">
                     <img src="images/Nespresso.webp" class="w-full aspect-video object-cover rounded-[2rem] shadow-2xl liquid-card reveal-on-scroll" alt="Indoor Farm">
+                    <p class="text-sm font-medium text-slate-400 uppercase tracking-widest pl-2">From Farm to Table</p>
                 </div>
             </div>
         </div>
@@ -259,30 +289,35 @@
                     <div class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-[2rem] blur opacity-10 group-hover:opacity-20 transition duration-1000"></div>
                     <img src="images/sensor.webp" class="relative w-full aspect-video object-cover rounded-[2rem] shadow-xl liquid-card reveal-on-scroll" alt="Wellbeing Sensor">
                 </div>
+                <p class="text-sm font-medium text-slate-400 uppercase tracking-widest pl-2">RoomYou: Real-time monitoring for healthier indoor environments</p>
             </div>
             <div class="space-y-6">
                 <div class="relative group">
                     <div class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-[2rem] blur opacity-10 group-hover:opacity-20 transition duration-1000"></div>
                     <img src="images/RoomYou listing-3.png" class="relative w-full aspect-video object-cover rounded-[2rem] shadow-xl liquid-card reveal-on-scroll" alt="Wellbeing Sensor">
                 </div>
+                <p class="text-sm font-medium text-slate-400 uppercase tracking-widest pl-2">RoomYou: iOS app for data logging, monitoring and exporting</p>
             </div>
             <div class="space-y-6">
                 <div class="relative group">
                     <div class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-[2rem] blur opacity-10 group-hover:opacity-20 transition duration-1000"></div>
                     <img src="images/RoomYou listing-4.png" class="relative w-full aspect-video object-cover rounded-[2rem] shadow-xl liquid-card reveal-on-scroll" alt="Wellbeing Sensor">
                 </div>
+                <p class="text-sm font-medium text-slate-400 uppercase tracking-widest pl-2">RoomYou: Webapp</p>
             </div>
             <div class="space-y-6">
                 <div class="relative group">
                     <div class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-[2rem] blur opacity-10 group-hover:opacity-20 transition duration-1000"></div>
                     <img src="images/RoomYou listing-5.jpg" class="relative w-full aspect-video object-cover rounded-[2rem] shadow-xl liquid-card reveal-on-scroll" alt="Wellbeing Sensor">
                 </div>
+                <p class="text-sm font-medium text-slate-400 uppercase tracking-widest pl-2">RoomYou: Grouping</p>
             </div>
             <div class="space-y-6">
                 <div class="relative group">
                     <div class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-[2rem] blur opacity-10 group-hover:opacity-20 transition duration-1000"></div>
                     <img src="images/RoomYou listing-6.jpg" class="relative w-full aspect-video object-cover rounded-[2rem] shadow-xl liquid-card reveal-on-scroll" alt="Wellbeing Sensor">
                 </div>
+                <p class="text-sm font-medium text-slate-400 uppercase tracking-widest pl-2">RoomYou: Infrastructure with AWS or any other cloud</p>
             </div>
         </div>
     </div>
@@ -294,7 +329,7 @@
         
         <div class="lg:col-span-4 lg:sticky lg:top-32 space-y-8">
             <div class="text-blue-400 font-bold uppercase tracking-widest text-xs">Pricing Leadership</div>
-            <h3 class="text-5xl font-bold leading-tight tracking-tighter">€300M Portfolio Optimization at Philips</h3>
+            <h3 class="text-5xl font-bold leading-tight tracking-tighter">€300M Portfolio Optimization</h3>
             
             <p class="text-slate-300 text-xl font-light leading-relaxed">
                 Managed the pricing and profitability strategy for a massive <strong>10,000 SKU portfolio</strong> across Asia Pacific. Implemented value-based pricing strategies that explicitly linked product features to <strong>monetary value</strong> that can be captured, driving measurable margin expansion.
@@ -334,6 +369,7 @@
                         <span class="text-[10px] font-bold uppercase tracking-widest text-slate-500">Active SKUs Optimized</span>
                     </div>
                 </div>
+                <p class="text-sm font-medium text-slate-500 uppercase tracking-widest pl-2">Fact-based PVMC reporting for regional Asia business leadership.</p>
             </div>
         </div>
     </div>
@@ -368,18 +404,21 @@
                     <div class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-[2rem] blur opacity-10 group-hover:opacity-20 transition duration-1000"></div>
                     <img src="images/waterprooflight.png" class="relative w-full aspect-video object-cover rounded-[2rem] shadow-xl liquid-card reveal-on-scroll" alt="Wellbeing Sensor">
                 </div>
+                <p class="text-sm font-medium text-slate-400 uppercase tracking-widest pl-2">Professional light with customization options for each project</p>
             </div>
             <div class="space-y-6">
                 <div class="relative group">
                     <div class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-[2rem] blur opacity-10 group-hover:opacity-20 transition duration-1000"></div>
                     <img src="images/Stadium.webp" class="relative w-full aspect-video object-cover rounded-[2rem] shadow-xl liquid-card reveal-on-scroll" alt="Wellbeing Sensor">
                 </div>
+                <p class="text-sm font-medium text-slate-400 uppercase tracking-widest pl-2">Making architectural intent possible</p>
             </div>
             <div class="space-y-6">
                 <div class="relative group">
                     <div class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-[2rem] blur opacity-10 group-hover:opacity-20 transition duration-1000"></div>
                     <img src="images/Hotel.webp" class="relative w-full aspect-video object-cover rounded-[2rem] shadow-xl liquid-card reveal-on-scroll" alt="Wellbeing Sensor">
                 </div>
+                <p class="text-sm font-medium text-slate-400 uppercase tracking-widest pl-2">Guest-experience</p>
             </div>
 
         </div>
@@ -469,30 +508,35 @@
                     <div class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-[2rem] blur opacity-10 group-hover:opacity-20 transition duration-1000"></div>
                     <img src="images/RSB1FeatureBanner-01.png" class="relative w-full aspect-video object-cover rounded-[2rem] shadow-xl liquid-card reveal-on-scroll" alt="Wellbeing Sensor">
                 </div>
+                <p class="text-sm font-medium text-slate-400 uppercase tracking-widest pl-2">A simple shopify app to encourage referral sales</p>
             </div>
             <div class="space-y-4">
                 <div class="relative group">
                     <div class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-[2rem] blur opacity-10 group-hover:opacity-20 transition duration-1000"></div>
                     <img src="images/RSB2Sharepaldashboard.png" class="relative w-full aspect-video object-cover rounded-[2rem] shadow-xl liquid-card reveal-on-scroll" alt="Wellbeing Sensor">
                 </div>
+                <p class="text-sm font-medium text-slate-400 uppercase tracking-widest pl-2">Integrates IG handles with Shopify discount code names automatically</p>
             </div>
             <div class="space-y-4">
                 <div class="relative group">
                     <div class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-[2rem] blur opacity-10 group-hover:opacity-20 transition duration-1000"></div>
                     <img src="images/RSB3Email template.png" class="relative w-full aspect-video object-cover rounded-[2rem] shadow-xl liquid-card reveal-on-scroll" alt="Wellbeing Sensor">
                 </div>
+                <p class="text-sm font-medium text-slate-400 uppercase tracking-widest pl-2">Easy to add to marketing apps</p>
             </div>
             <div class="space-y-4">
                 <div class="relative group">
                     <div class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-[2rem] blur opacity-10 group-hover:opacity-20 transition duration-1000"></div>
                     <img src="images/RSB4Orders.png" class="relative w-full aspect-video object-cover rounded-[2rem] shadow-xl liquid-card reveal-on-scroll" alt="Wellbeing Sensor">
                 </div>
+                <p class="text-sm font-medium text-slate-400 uppercase tracking-widest pl-2">Measureable impact</p>
             </div>
             <div class="space-y-4">
                 <div class="relative group">
                     <div class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-[2rem] blur opacity-10 group-hover:opacity-20 transition duration-1000"></div>
                     <img src="images/RSB5Withdrawal manager.png" class="relative w-full aspect-video object-cover rounded-[2rem] shadow-xl liquid-card reveal-on-scroll" alt="Wellbeing Sensor">
                 </div>
+                <p class="text-sm font-medium text-slate-400 uppercase tracking-widest pl-2">Real performance Pay out</p>
             </div>
 
         </div>
@@ -519,28 +563,38 @@
             <div class="lg:col-span-8 space-y-8">
                 <div class="space-y-6">
                     <img src="images/PlantParentRender.png" class="w-full aspect-video object-cover rounded-[2rem] shadow-2xl liquid-card reveal-on-scroll" alt="Product rendering">
+                    <p class="text-sm font-medium text-slate-400 uppercase tracking-widest pl-2">The old workflow: Design → Prototype → Photo → Feedback. The AI workflow: Design → AI Visualization → Feedback → Refine.
+
+By integrating AI into our 3D pipeline, we’re creating 'digital twins' that are indistinguishable from reality. This allows us to validate aesthetic and functional choices with stakeholders before spending time and money on physical tooling.</p>
                 </div>
                 <div class="space-y-6">
                     <img src="images/AIworkflow.png" class="w-full aspect-video object-cover rounded-[2rem] shadow-2xl liquid-card reveal-on-scroll" alt="AI workflow automation">
+                    <p class="text-sm font-medium text-slate-400 uppercase tracking-widest pl-2">AI workflow automation and design.</p>
                 </div>
                 <div class="space-y-6">
                     <img src="images/AImonitoring.png" class="w-full aspect-video object-cover rounded-[2rem] shadow-2xl liquid-card reveal-on-scroll" alt="AI IOT monitoring">
+                    <p class="text-sm font-medium text-slate-400 uppercase tracking-widest pl-2">e.g. ad-hoc data request from management takes effort and time. With AI generated scripts the 906 records are checked in an instant.</p>
                 </div>
                 <div class="space-y-6">
                     <img src="images/AWS monitoring.png" class="w-full aspect-video object-cover rounded-[2rem] shadow-2xl liquid-card reveal-on-scroll" alt="AWS IOT monitoring">
+                    <p class="text-sm font-medium text-slate-400 uppercase tracking-widest pl-2">Automated monitoring and logging for thousands of heartbeats to monitor uptime and performance.</p>
                 </div>
                 <div class="space-y-6">
                     <img src="images/Notifications.png" class="w-full aspect-video object-cover rounded-[2rem] shadow-2xl liquid-card reveal-on-scroll" alt="AWS IOT monitoring">
+                    <p class="text-sm font-medium text-slate-400 uppercase tracking-widest pl-2">Simple notifications to act upon, and implementing learning with AI on what is normal and what could be done better.</p>
                 </div>
                 <div class="space-y-6">
                     <img src="images/JCCPA-dasboard2.png" class="w-full aspect-video object-cover rounded-[2rem] shadow-2xl liquid-card reveal-on-scroll" alt="AI IOT monitoring">
+                    <p class="text-sm font-medium text-slate-400 uppercase tracking-widest pl-2">Building dashboard to visualize big trends.</p>
                 </div>
 
                 <div class="space-y-6">
                     <img src="images/jccpa-watchdog-telegram.png" class="w-full aspect-video object-cover rounded-[2rem] shadow-2xl liquid-card reveal-on-scroll" alt="AWS IOT monitoring">
+                    <p class="text-sm font-medium text-slate-400 uppercase tracking-widest pl-2">Simple messages on your phone and standardized replies.</p>
                 </div>
                 <div class="space-y-6">
                     <img src="images/storytelling.png" class="w-full aspect-video object-cover rounded-[2rem] shadow-2xl liquid-card reveal-on-scroll" alt="Storytelling">
+                    <p class="text-sm font-medium text-slate-400 uppercase tracking-widest pl-2">Storytelling and development of marcom guidelines for AI.</p>
                 </div>
             </div>
         </div>
@@ -759,9 +813,9 @@
 
 
 </section> -->
-
-<section id="contact" class="py-32 px-4 md:px-12 lg:px-16 bg-white border-t border-slate-100 text-left">    
-    <div class="max-w-[94%] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">        
+<section id="contact" class="py-32 px-4 md:px-12 lg:px-16 bg-white border-t border-slate-100 text-left">
+    <div class="max-w-[94%] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+        
         <div class="lg:col-span-4 lg:sticky lg:top-32 space-y-6">
             <h2 class="text-4xl font-bold text-slate-900 tracking-tight">Helping you succeed</h2>
             <ul class="space-y-4">
