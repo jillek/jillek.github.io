@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids March 2026 Calendar</title>
+    <style>
+        :root {
+            --travel-color: #FFDEE9; 
+            --event-color: #E0F2F1;
+            --habs-color: #E3F2FD; 
+            --church-color: #F3E5F5;
+        }
+
+        @page { 
+            size: A3 landscape; 
+            margin: 3mm; /* Minimal margin to maximize space */
+        }
+
+        body {
+            font-family: 'Comic Sans MS', cursive; 
+            margin: 0; 
+            padding: 5px;
+            /* Forces the body to take the full height of the paper */
+            height: 98vh; 
+            display: flex; 
+            flex-direction: column; 
+            overflow: hidden;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        .header { 
+            text-align: center; 
+            padding: 5px 0;
+        }
+
+        h1 { 
+            font-size: 38px; 
+            color: #FF6F61; 
+            margin: 0; 
+        }
+
+        .calendar-grid {
+            display: grid; 
+            grid-template-columns: repeat(7, 1fr);
+            /* '1fr' for each week forces them to split all remaining height equally */
+            grid-template-rows: 45px repeat(5, 1fr); 
+            gap: 5px;
+            border: 4px solid #FF6F61; 
+            border-radius: 20px; 
+            padding: 10px;
+            flex-grow: 1; 
+            background: #fff;
+        }
+
+        .day-name { 
+            text-align: center; 
+            font-weight: bold; 
+            font-size: 20px; 
+            line-height: 45px;
+            background-color: #FF6F61 !important; 
+            color: white; 
+            border-radius: 10px;
+        }
+
+        .day-cell { 
+            border: 1.5px dashed #BDBDBD; 
+            border-radius: 12px; 
+            padding: 8px; 
+            display: flex; 
+            flex-direction: column;
+            background: #fff;
+        }
+
+        /* Rainbow Columns */
+        .day-cell:nth-child(7n+8) { background: #FFE5E5 !important; }
+        .day-cell:nth-child(7n+9) { background: #FFF2E5 !important; }
+        .day-cell:nth-child(7n+10) { background: #FFFFE5 !important; }
+        .day-cell:nth-child(7n+11) { background: #F2FFE5 !important; }
+        .day-cell:nth-child(7n+12) { background: #E5F2FF !important; }
+        .day-cell:nth-child(7n+13) { background: #E5E5FF !important; }
+        .day-cell:nth-child(7n+14) { background: #F2E5FF !important; }
+
+        .date-num { 
+            font-size: 24px; 
+            font-weight: bold; 
+            color: #444;
+            margin-bottom: 2px;
+        }
+
+        .event { 
+            font-size: 12px; 
+            margin-top: 2px; 
+            padding: 4px 6px; 
+            border-radius: 6px; 
+            font-weight: bold; 
+            border: 1px solid rgba(0,0,0,0.05); 
+            line-height: 1.1;
+        }
+
+        .habs { background: var(--habs-color) !important; }
+        .church { background: var(--church-color) !important; }
+        .other { background: var(--event-color) !important; }
+
+        .notes-section {
+            margin-top: 5px; 
+            padding: 5px 15px; 
+            border: 2px solid #FFD1DC; 
+            border-radius: 12px;
+            background: #FFF9F0 !important; 
+            min-height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .notes-content { 
+            font-size: 14px; 
+            font-weight: bold;
+            display: flex;
+            gap: 25px;
+        }
+
+        @media print {
+            /* Hide the 'Page 1 of 1' footer usually added by browsers */
+            @page { margin: 0; }
+            body { padding: 8mm; height: 95vh; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header"><h1>🌸 March 2026 🌸</h1></div>
+    
+    <div class="calendar-grid">
+        <div class="day-name">Sun</div><div class="day-name">Mon</div><div class="day-name">Tue</div><div class="day-name">Wed</div><div class="day-name">Thu</div><div class="day-name">Fri</div><div class="day-name">Sat</div>
+
+        <div class="day-cell"><span class="date-num">1</span><div class="event church">⛪ Church (9:30)</div></div>
+        <div class="day-cell"><span class="date-num">2</span><div class="event other">🏫 HKSPC (9:30-10:30)</div></div>
+        <div class="day-cell"><span class="date-num">3</span></div>
+        <div class="day-cell"><span class="date-num">4</span></div>
+        <div class="day-cell"><span class="date-num">5</span><div class="event other">🍹 Dutch Drinks (19:00)</div></div>
+        <div class="day-cell"><span class="date-num">6</span></div>
+        <div class="day-cell"><span class="date-num">7</span></div>
+
+        <div class="day-cell"><span class="date-num">8</span><div class="event church">⛪ Church (9:30)</div></div>
+        <div class="day-cell"><span class="date-num">9</span><div class="event habs">🏫 LH Interview (13:00)</div></div>
+        <div class="day-cell"><span class="date-num">10</span><div class="event other">🎓 RUG Alumni (18:00)</div></div>
+        <div class="day-cell"><span class="date-num">11</span></div>
+        <div class="day-cell"><span class="date-num">12</span></div>
+        <div class="day-cell"><span class="date-num">13</span></div>
+        <div class="day-cell"><span class="date-num">14</span></div>
+
+        <div class="day-cell"><span class="date-num">15</span><div class="event church">⛪ Church (9:30)</div></div>
+        <div class="day-cell"><span class="date-num">16</span></div>
+        <div class="day-cell"><span class="date-num">17</span></div>
+        <div class="day-cell"><span class="date-num">18</span></div>
+        <div class="day-cell"><span class="date-num">19</span></div>
+        <div class="day-cell"><span class="date-num">20</span></div>
+        <div class="day-cell"><span class="date-num">21</span></div>
+
+        <div class="day-cell"><span class="date-num">22</span><div class="event church">⛪ Church (9:30)</div></div>
+        <div class="day-cell"><span class="date-num">23</span></div>
+        <div class="day-cell"><span class="date-num">24</span></div>
+        <div class="day-cell"><span class="date-num">25</span></div>
+        <div class="day-cell"><span class="date-num">26</span></div>
+        <div class="day-cell"><span class="date-num">27</span></div>
+        <div class="day-cell"><span class="date-num">28</span></div>
+
+        <div class="day-cell"><span class="date-num">29</span><div class="event church">⛪ Church (9:30)</div></div>
+        <div class="day-cell"><span class="date-num">30</span></div>
+        <div class="day-cell"><span class="date-num">31</span></div>
+        <div class="day-cell"></div><div class="day-cell"></div><div class="day-cell"></div><div class="day-cell"></div>
+    </div>
+
+    <div class="notes-section">
+        <div class="notes-content">
+            <span><strong>Upcoming:</strong> 19-23 Mar: LH Possible 2nd Int (9-13:00)</span>
+            <span>✈️ 1-14 Apr: Travel NL</span>
+            <span>🏥 23 Apr: MCHC Anna-Sophie (15:00)</span>
+        </div>
+    </div>
+</body>
+</html>
